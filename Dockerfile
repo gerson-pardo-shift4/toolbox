@@ -11,6 +11,7 @@ RUN apt-get update && \
         gnupg2 \
         socat \
         nginx \
+        jq \
         ca-certificates \
         unzip && \
     rm -rf /var/lib/apt/lists/*
