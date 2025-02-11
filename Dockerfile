@@ -13,6 +13,7 @@ RUN apt-get update && \
         nginx \
         jq \
         ca-certificates \
+        apt-utils \
         unzip && \
     rm -rf /var/lib/apt/lists/*
 
