@@ -14,7 +14,7 @@ RUN apt-get update && \
         jq \
         ca-certificates \
         apt-utils \
-        unzip && \
+        unzip \
         bash-completion && \
     rm -rf /var/lib/apt/lists/*
 
