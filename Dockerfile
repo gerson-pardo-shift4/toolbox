@@ -15,6 +15,7 @@ RUN apt-get update && \
         ca-certificates \
         apt-utils \
         unzip && \
+        bash-completion && \
     rm -rf /var/lib/apt/lists/*
 
 RUN update-ca-certificates
