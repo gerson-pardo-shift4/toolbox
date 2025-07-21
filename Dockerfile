@@ -20,6 +20,7 @@ RUN apt-get update && \
 
 RUN update-ca-certificates
 
+ENV DEBIAN_FRONTEND=noninteractive
 RUN curl -fsSL https://get.docker.com|sh
 
 ENV TELEPORT_EDITION="oss"
