@@ -24,7 +24,7 @@ RUN curl -fsSL https://get.docker.com|sh
 
 ENV TELEPORT_EDITION="oss"
 ENV TELEPORT_VERSION="17.5.6"
-RUN curl https://cdn.teleport.dev/install-v17.4.5.sh | bash -s ${TELEPORT_VERSION?} ${TELEPORT_EDITION?}
+RUN curl https://cdn.teleport.dev/install-v17.5.6.sh | bash -s ${TELEPORT_VERSION?} ${TELEPORT_EDITION?}
 
 RUN curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/$(dpkg --print-architecture)/kubectl" && \
     install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl && \
